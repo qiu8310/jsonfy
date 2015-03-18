@@ -1,5 +1,5 @@
 # jsonfy 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image] [![Coverage Status][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image] [![Coverage Status][coveralls-image]][coveralls-url] [![Code Climate][climate-image]][climate-url]
 
 Parse json like string to json object
 
@@ -39,6 +39,8 @@ Copyright (c) 2015 Zhonglei Qiu. Licensed under the MIT license.
 
 
 
+[climate-url]: https://codeclimate.com/github/qiu8310/jsonfy
+[climate-image]: https://codeclimate.com/github/qiu8310/jsonfy/badges/gpa.svg
 [npm-url]: https://npmjs.org/package/jsonfy
 [npm-image]: https://badge.fury.io/js/jsonfy.svg
 [travis-url]: https://travis-ci.org/qiu8310/jsonfy
