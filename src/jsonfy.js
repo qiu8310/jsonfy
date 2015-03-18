@@ -30,9 +30,9 @@ var jsonfy = (function() {
       if (str.charAt(0) === '-') { str = str.substr(1); }
 
       if (/^(?:\d*\.)?\d+(?:[eE][-+]?\d*)?$/.test(str)) {
-        // 0056, 00.56, 56.00 也会符合正则的
+        // 0056, 00.56, 56.00 will match too
         if (str.indexOf('.') >= 0) {
-          // 如果小数的第一位是0，则第二位一定要是 . ； 而如果第一位不是 0，则不管 . 在第几位都有效
+          // if first char is '0', then second must be '.'
           return (str.charAt(0) !== '0') || (str.charAt(1) === '.');
         } else {
           return str === '0' || str.charAt(0) !== '0';
@@ -112,7 +112,7 @@ var jsonfy = (function() {
       error('Bad string');
     },
 
-  // 字面量，可以是字符串、数值，或 true, false, null
+    // literal value，can be string, number or true, false, null
     literal = function() {
       var result = '';
       while (ch && endChars.indexOf(ch) < 0) {
