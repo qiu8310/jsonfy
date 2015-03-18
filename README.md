@@ -15,12 +15,17 @@ $ npm install --save jsonfy
 
 ```javascript
 var jsonfy = require('jsonfy');
-jsonfy(); // "awesome"
+jsonfy('{str: abc, bool: true, number: 0.24, array: [1,2], emptyObj: {}}'); 
+
+// return: 
+//{
+//  str: 'abc',
+//  bool: true,
+//  number: 0.24,
+//  array: [1, 2],
+//  emptyObj: {}
+//}
 ```
-
-## API
-
-_(Coming soon)_
 
 
 ## Contributing
