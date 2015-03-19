@@ -14,18 +14,24 @@ $ npm install --save jsonfy
 ## Usage
 
 ```javascript
-var jsonfy = require('jsonfy');
-jsonfy('{str: abc, bool: true, number: 0.24, array: [1,2], emptyObj: {}}'); 
 
-// return: 
-//{
-//  str: 'abc',
-//  bool: true,
-//  number: 0.24,
-//  array: [1, 2],
-//  emptyObj: {}
-//}
+var jsonfy = require('jsonfy');
+jsonfy('12')                  // result number: 12
+jsonfy('"12"')                // result string: '12'
+jsonfy('[a, 2.5, true]')      // result array : ['a', 2.5, true] 
+jsonfy('{a: a b c, f: 2e2}')  // result object: {a: 'a b c', f: 200}
+
+jsonfy('{str: abc, bool: true, number: 0.24, array: [1,2], emptyObj: {}}');
+// return object: {str: 'abc', bool: true, number: 0.24, array: [1, 2], emptyObj: {}}
+
 ```
+
+## Feature
+
+* Fully compatible with JSON string
+* String can use single quote
+* String don't need quote only if it is a number string or it contains characters `]`,`}`,`'` or `"`
+
 
 
 ## Contributing
