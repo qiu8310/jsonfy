@@ -55,3 +55,7 @@ Copyright (c) 2015 Zhonglei Qiu. Licensed under the MIT license.
 [daviddm-image]: https://david-dm.org/qiu8310/jsonfy
 [coveralls-url]: https://coveralls.io/r/qiu8310/jsonfy
 [coveralls-image]: https://coveralls.io/repos/qiu8310/jsonfy/badge.png
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/qiu8310/jsonfy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
