@@ -37,7 +37,10 @@ describe('jsonfy', function () {
 
   it('should transform simple string', function () {
     jsonfy('').should.equal('');
-    jsonfy('abc').should.equal('abc');
+    jsonfy(' ').should.equal('');
+    jsonfy('ab ').should.equal('ab');
+    jsonfy(' ab ').should.equal('ab');
+    jsonfy(' ab').should.equal('ab');
     jsonfy('are you ok').should.equal('are you ok');
     jsonfy('"are\r\nyou"').should.equal('are\r\nyou');
     jsonfy('"are\f\b\tyou"').should.equal('are\f\b\tyou');
